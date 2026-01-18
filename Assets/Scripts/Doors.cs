@@ -77,8 +77,9 @@ public class Doors : MonoBehaviour, IInteractable
         doorsSoundInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject.transform));
         
         // Ustawia parametr "Doors" w zależności od stanu drzwi.
-        string parameterLabel = doorsOpened ? "Open" : "Close";
-        doorsSoundInstance.setParameterByNameWithLabel("Doors", parameterLabel);
+        string parameterLabel = doorsOpened ? "Open" : "Closed";
+        Debug.Log(parameterLabel);
+        doorsSoundInstance.setParameterByNameWithLabel("State", parameterLabel);
         
         doorsSoundInstance.start();
     }
