@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9219871921546824689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Heartbeat
+  m_EditorClassIdentifier: 
+  Path: event:/Heartbeat
+  Guid:
+    Data1: -1923953784
+    Data2: 1181946439
+    Data3: -1925843574
+    Data4: 800188804
+  Banks:
+  - {fileID: -6037774908646985289}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6730
 --- !u!114 &-9059455190682024743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,10 +149,10 @@ MonoBehaviour:
   Path: ../audio07-12/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639043605060872134
+  lastModified: 639055652368529561
   FileSizes:
   - Name: Desktop
-    Value: 6919968
+    Value: 6972000
   Exists: 1
 --- !u!114 &-5627559622411302715
 MonoBehaviour:
@@ -341,13 +368,15 @@ MonoBehaviour:
   - {fileID: -2722762179709156537}
   - {fileID: -5627559622411302715}
   - {fileID: 7178023780032241209}
+  - {fileID: 7891624862062639107}
+  - {fileID: -9219871921546824689}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6037774908646985289}
   StringsBanks:
   - {fileID: 171372224281714454}
   cacheVersion: 131856
-  cacheTime: 639043605060887191
+  cacheTime: 639055652368539580
   SerializableEventsDict:
   - key: event:/Tavern_Ambience
     index: 0
@@ -367,6 +396,10 @@ MonoBehaviour:
     index: 7
   - key: snapshot:/Room_Ambient
     index: 8
+  - key: snapshot:/Heartbeat_Priority
+    index: 9
+  - key: event:/Heartbeat
+    index: 10
 --- !u!114 &171372224281714454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,10 +415,10 @@ MonoBehaviour:
   Path: ../audio07-12/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639043605060887191
+  lastModified: 639055652368539580
   FileSizes:
   - Name: Desktop
-    Value: 1636
+    Value: 2020
   Exists: 1
 --- !u!114 &381239203239116510
 MonoBehaviour:
@@ -668,6 +701,33 @@ MonoBehaviour:
     Data2: 1315663201
     Data3: -1245638518
     Data4: 2057587892
+  Banks:
+  - {fileID: -6037774908646985289}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &7891624862062639107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Heartbeat_Priority
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Heartbeat_Priority
+  Guid:
+    Data1: -355021215
+    Data2: 1204108393
+    Data3: -385959508
+    Data4: 720896674
   Banks:
   - {fileID: -6037774908646985289}
   IsStream: 0

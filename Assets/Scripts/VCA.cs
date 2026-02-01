@@ -15,7 +15,7 @@ public class VCA : MonoBehaviour
 
     // Flagi stanu wyciszenia.
     [SerializeField]
-    private bool globalMuteActive = true;
+    private bool globalMuteActive = false;
     [SerializeField]
     private bool musicMuteActive = false;
     [SerializeField]
@@ -28,8 +28,8 @@ public class VCA : MonoBehaviour
         // Pobiera VCAs z FMOD.
         globalVCA = FMODUnity.RuntimeManager.GetVCA("vca:/Mute");
         musicVCA = FMODUnity.RuntimeManager.GetVCA("vca:/Music");
-        tavernVCA = FMODUnity.RuntimeManager.GetVCA("vca:/Tavern_amb");
-        outsideVCA = FMODUnity.RuntimeManager.GetVCA("vca:/Outside_amb");
+        tavernVCA = FMODUnity.RuntimeManager.GetVCA("vca:/Tavern");
+        outsideVCA = FMODUnity.RuntimeManager.GetVCA("vca:/Outside");
 
         // Ustawia początkową głośność.
         globalVCA.setVolume(DecibelToLinear(-100));
